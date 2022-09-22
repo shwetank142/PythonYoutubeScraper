@@ -1,6 +1,6 @@
 # PythonYoutubeScraper
 
-1) This project was all about extracting the data from youtube Channel Videos and showing in form of table.
+1) This project is all about extracting the data from youtube Channel Videos and showing in form of table.
 2) Data includes :
    Video Title,
    Youtube Videos Url,

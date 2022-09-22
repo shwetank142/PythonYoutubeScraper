@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Information Page</title>
+<link rel="icon" type="image/x-icon" href="../static/appicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+<style>
+ .table-users{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.mytable{
+height: 300px
+}
+</style>
+<div class="header">YOUTUBE VIDEOS INFORMATION PAGE</div>
+  <div class="table-users">
+
+   <table cellspacing="2" class="mytable">
+      <tr>
+          <th>Titles</th>
+         <th>Urls</th>
+          <th>VideoId</th>
+          <th>Thumbnails_URL</th>
+          <th>Likes</th>
+          <th>Views</th>
+         <th>Total Comments</th>
+          <th>Commenter</th>
+         <th width="0">Comments</th>
+      </tr>
+       {% for i in data_list %}
+      <tr>
+          <td>{{i[0]}}</td>
+          <td>{{i[1]}}</td>
+         <td>{{i[2]}}</td>
+          <td>{{i[3]}}</td>
+          <td>{{i[4]}}</td>
+         <td>{{i[5]}}</td>
+         <td>{{i[6]}}</td>
+        <td>{{i[7]}}</td>
+        <td>{{i[8]}}</td>
+
+      {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>

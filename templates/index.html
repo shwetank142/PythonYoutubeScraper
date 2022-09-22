@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>YOUTUBE SCRAPER</title>
+<link rel="icon" type="image/x-icon" href="../static/appicon.jpg">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <h1>Welcome To Youtube Scraping World ! </h1>
+        <p>
+            <img src ="../static/scraping.jpg" width="400" height="200">
+
+        </p>
+
+    <h2>Let's Explore and Extract the data</h2>
+        <div class="form">
+            <form method="post" action="/scrap">
+                <label>Enter Youtuber Home Page URL</label><br>
+                <input  type="text" name="channel_url"><br><br>
+
+                <label>Enter the number of videos to get information</label><br>
+                <input  type="text" name="no_of_video"><br><br>
+
+                <label>Processing Time (eg.1,2,3)</label><br>
+                <input  type="text" name="sleepTime"><br><br>
+
+                <input  type="submit" value="Search"><br><br>
+            </form>
+        </div>
+</div>
+
+{% endblock %}
+
+
+

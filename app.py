@@ -6,7 +6,8 @@ import pandas as pd
 
 app=Flask(__name__)
 
-@app.route('/',methods=['GET'])
+
+@app.route('/',methods=['POST','GET'])
 @cross_origin()
 def home_page():
     return render_template('index.html')
@@ -43,5 +44,5 @@ def next_page():
     else:
         return render_template('index.html')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000)
+    app.run()
 

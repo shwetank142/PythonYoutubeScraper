@@ -30,14 +30,10 @@ pymongo==4.1.1
 pytz==2022.2.1
 requests==2.27.1
 selenium==3.141.0
-six
 soupsieve==2.3.2.post1
 traitlets==4.3.3
 typing_extensions==4.1.1
 urllib3==1.26.12
-wcwidth==0.2.5
-Werkzeug==2.0.3
-wincertstore==0.2
 zipp==3.6.0
 Pillow
 pytube

@@ -35,6 +35,5 @@ traitlets==4.3.3
 typing_extensions==4.1.1
 urllib3==1.26.12
 zipp==3.6.0
-Pillow
+Pillow==9.2.0
 pytube
-gridfs-fuse
